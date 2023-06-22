@@ -1,0 +1,17 @@
+﻿<Application x:Class="ZeiJakuSei.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ZeiJakuSei"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Chinese_Simplified.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="/Resources/Alibaba_PuHuiTi_2.0_45_Light_45_Light.ttf#Alibaba PuHuiTi 2.0 45 Light" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="ZeiJakuSei.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c="clr-namespace:ZeiJakuSei.Controls"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        Title="ZeiJakuSei" Height="540" Width="950">
+    <Border Background="White" CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <c:CustomButton Text="{DynamicResource Preference}" Width="auto" Height="auto"  />
+            <c:CustomButton Grid.Column="2" Text="Localization.Set" Width="auto" Height="auto"  />
+        </Grid>
+    </Border>
+</Window>
