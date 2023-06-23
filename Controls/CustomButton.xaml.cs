@@ -30,7 +30,7 @@ namespace ZeiJakuSei.Controls
 
         // 新建属性 Text
         string text;
-        public static readonly DependencyProperty textProperty = 
+        public static readonly DependencyProperty textProperty =
             DependencyProperty.Register(
                 "Text",
                 typeof(string),
@@ -47,6 +47,27 @@ namespace ZeiJakuSei.Controls
             get
             {
                 return text;
+            }
+        }
+        // 新建属性 FontSize
+        int fontSize;
+        public static readonly DependencyProperty fontSizeProperty =
+            DependencyProperty.Register(
+                "FontSize",
+                typeof(int),
+                typeof(CustomButton),
+                new PropertyMetadata(18));
+        public int FontSize
+        {
+            set
+            {
+                fontSize = value;
+                ButtonText.FontSize = value;
+            }
+
+            get
+            {
+                return fontSize;
             }
         }
 

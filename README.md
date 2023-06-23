@@ -1,12 +1,12 @@
 # Name
 “ZeiJakuSei”对于这个名字，你可能会十分陌生  
-ZeiJakuSei(ZJS)来自于中文“漏洞”将其翻译至日语后音译而成 <ruby>ZeiJakuSei<rt>脆弱性</rt></ruby>  
+ZeiJakuSei ```ZJS``` 来自于中文“漏洞”将其翻译至日语后音译而成 <ruby>ZeiJakuSei<rt>脆弱性</rt></ruby>  
 如你所见 ZeiJakuSei 将会尽量避免 “ZeiJakuSei”  
 **WIP: 此项目正在被开发，你可以尝试为其添砖加瓦**  
 <p align="center">
-<a><img src="https://img.shields.io/badge/Visual%20Studio-000000.svg?style=for-the-badge&logo=visual-studio&logoColor=white" /></a>
-<a><img src="https://img.shields.io/badge/.NET-000000.svg?style=for-the-badge&logo=.NET&logoColor=white" /></a>
-<a><img src="https://img.shields.io/badge/GNU-000000.svg?style=for-the-badge&logo=GNU&logoColor=white" /></a>
+<a href="https://visualstudio.com"><img src="https://img.shields.io/badge/Visual%20Studio-000000.svg?style=for-the-badge&logo=visual-studio&logoColor=white" /></a>
+<a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-000000.svg?style=for-the-badge&logo=.NET&logoColor=white" /></a>
+<a href="https://www.gnu.org/"><img src="https://img.shields.io/badge/GNU-000000.svg?style=for-the-badge&logo=GNU&logoColor=white" /></a>
 </p>
 
 # How to use?
