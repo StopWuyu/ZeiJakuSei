@@ -14,5 +14,5 @@
     <Border.RenderTransform>
         <ScaleTransform x:Name="ButtonScale" />
     </Border.RenderTransform>
-    <TextBlock x:Name="ButtonText" Text="{Binding Text, ElementName=ButtonBorder}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" />
+    <TextBlock x:Name="ButtonText" Text="{Binding Text, ElementName=ButtonBorder}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{Binding FontSize, ElementName=ButtonBorder}" />
 </Border>

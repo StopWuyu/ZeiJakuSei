@@ -3,25 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:c="clr-namespace:ZeiJakuSei.Controls"
         WindowStyle="None"
-        ResizeMode="NoResize"
+        ResizeMode="CanMinimize"
+        AllowsTransparency="True"
         Background="Transparent"
         Title="ZeiJakuSei" Height="540" Width="950">
-    <Border Background="White" CornerRadius="10">
+    <Border Background="White" CornerRadius="10" >
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
-                <RowDefinition Height="1*" />
+                <RowDefinition Height="10*" />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
-            <c:CustomButton Text="{DynamicResource Preference}" Width="auto" Height="auto"  />
-            <c:CustomButton Grid.Column="2" Text="Localization.Set" Width="auto" Height="auto"  />
+            <Border Grid.ColumnSpan="2" CornerRadius="10,10,0,0" Background="Gray" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="4" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <c:CustomButton BorderThickness="0" Text="{DynamicResource Home}" CornerRadius="15" Background="Transparent" Height="30" Width="80" />
+                        <c:CustomButton BorderThickness="0" Text="{DynamicResource Download}" CornerRadius="15" Background="Transparent" Height="30" Width="80" Margin="60,0,0,0" />
+                        <c:CustomButton BorderThickness="0" Text="{DynamicResource Preference}" CornerRadius="15" Background="Transparent" Height="30" Width="80" Margin="60,0,0,0" />
+                        <c:CustomButton BorderThickness="0" Text="{DynamicResource About}" CornerRadius="15" Background="Transparent" Height="30" Width="80" Margin="60,0,0,0" />
+                    </StackPanel>
+
+                    <c:CustomButton x:Name="ButtonMinimize" Grid.Column="1" BorderThickness="0" Text="-" CornerRadius="15" FontSize="30" Background="Transparent" Height="30" Width="30" Click="ButtonMinimize_Click" />
+                    <c:CustomButton x:Name="ButtonClose" Grid.Column="2" BorderThickness="0" Text="×" CornerRadius="15" FontSize="30" Background="Transparent" Height="30" Width="30" Click="ButtonClose_Click" />
+                </Grid>
+            </Border>
         </Grid>
     </Border>
 </Window>
