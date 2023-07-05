@@ -1,18 +1,19 @@
 # Name
-¡°ZeiJakuSei¡±¶ÔÓÚÕâ¸öÃû×Ö£¬Äã¿ÉÄÜ»áÊ®·ÖÄ°Éú  
-ZeiJakuSei ```ZJS``` À´×ÔÓÚÖĞÎÄ¡°Â©¶´¡±½«Æä·­ÒëÖÁÈÕÓïºóÒôÒë¶ø³É <ruby>ZeiJakuSei<rt>´àÈõĞÔ</rt></ruby>  
-ÈçÄãËù¼û ZeiJakuSei ½«»á¾¡Á¿±ÜÃâ ¡°ZeiJakuSei¡±  
-**WIP: ´ËÏîÄ¿ÕıÔÚ±»¿ª·¢£¬Äã¿ÉÒÔ³¢ÊÔÎªÆäÌí×©¼ÓÍß**  
+â€œZeiJakuSeiâ€å¯¹äºè¿™ä¸ªåå­—ï¼Œä½ å¯èƒ½ä¼šååˆ†é™Œç”Ÿ  
+ZeiJakuSei ```ZJS``` æ¥è‡ªäºä¸­æ–‡â€œæ¼æ´â€å°†å…¶ç¿»è¯‘è‡³æ—¥è¯­åéŸ³è¯‘è€Œæˆ <ruby>ZeiJakuSei<rt>è„†å¼±æ€§</rt></ruby>  
+å¦‚ä½ æ‰€è§ ZeiJakuSei å°†ä¼šå°½é‡é¿å… â€œZeiJakuSeiâ€  
+**WIP: æ­¤é¡¹ç›®æ­£åœ¨è¢«å¼€å‘ï¼Œä½ å¯ä»¥å°è¯•ä¸ºå…¶æ·»ç –åŠ ç“¦**  
 <p align="center">
 <a href="https://visualstudio.com"><img src="https://img.shields.io/badge/Visual%20Studio-000000.svg?style=for-the-badge&logo=visual-studio&logoColor=white" /></a>
 <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-000000.svg?style=for-the-badge&logo=.NET&logoColor=white" /></a>
 <a href="https://www.gnu.org/"><img src="https://img.shields.io/badge/GNU-000000.svg?style=for-the-badge&logo=GNU&logoColor=white" /></a>
 </p>
 
+
 # How to use?
-- ´Ó [Github Release](https://github.com/StopWuyu/ZeiJakuSei/releases) ÏÂÔØ×îĞÂµÄÕıÊ½°æ±¾
-- ÈôÃ»ÓĞ£¬¿ÉÇ°Íù [Github Actions](https://github.com/StopWuyu/ZeiJakuSei/actions) ÏÂÔØÊÊºÏµÄ¹¹½¨°æ±¾
+- ä» [Github Release](https://github.com/StopWuyu/ZeiJakuSei/releases) ä¸‹è½½æœ€æ–°çš„æ­£å¼ç‰ˆæœ¬
+- è‹¥æ²¡æœ‰ï¼Œå¯å‰å¾€ [Github Actions](https://github.com/StopWuyu/ZeiJakuSei/actions) ä¸‹è½½é€‚åˆçš„æ„å»ºç‰ˆæœ¬
 
 # Troubleshooting
-- µ±ÄãÓö¼ûÁËÒ»Ğ©Bug²¢ÇÒµ¼ÖÂ³ÌĞòÎŞ·¨Õı³£Ê¹ÓÃ£¬ÇëÔÚ [Github Issues](https://github.com/StopWuyu/ZeiJakuSei/issues) ·¢Ìû¡£ÇëÅäÉÏÄãÏêÏ¸µÄ´íÎóÈÕÖ¾£¬¸´ÏÖ²½Öè£¬ÎÊÌâÃèÊöµÈµÈ£¬ÒÔ±ãÎÒÃÇ¸üºÃµÄÑ°ÕÒÎÊÌâ¡£
-- µ±ÄãÈÏÎª×Ô¼ºÄÜ¹»ĞŞ¸´Õâ¸öBug£¬²¢ÇÒÕæµÄ³É¹¦ÁË£¬Ò²»¶Ó­ÄãÔÚ [Github Pull Requests](https://github.com/StopWuyu/ZeiJakuSei/pulls) Ìá½»PR£¬ÎÒÃÇ»á¾¡¿ìÉóºË²¢Í¨¹ı¡£
+- å½“ä½ é‡è§äº†ä¸€äº›Bugå¹¶ä¸”å¯¼è‡´ç¨‹åºæ— æ³•æ­£å¸¸ä½¿ç”¨ï¼Œè¯·åœ¨ [Github Issues](https://github.com/StopWuyu/ZeiJakuSei/issues) å‘å¸–ã€‚è¯·é…ä¸Šä½ è¯¦ç»†çš„é”™è¯¯æ—¥å¿—ï¼Œå¤ç°æ­¥éª¤ï¼Œé—®é¢˜æè¿°ç­‰ç­‰ï¼Œä»¥ä¾¿æˆ‘ä»¬æ›´å¥½çš„å¯»æ‰¾é—®é¢˜ã€‚
+- å½“ä½ è®¤ä¸ºè‡ªå·±èƒ½å¤Ÿä¿®å¤è¿™ä¸ªBugï¼Œå¹¶ä¸”çœŸçš„æˆåŠŸäº†ï¼Œä¹Ÿæ¬¢è¿ä½ åœ¨ [Github Pull Requests](https://github.com/StopWuyu/ZeiJakuSei/pulls) æäº¤PRï¼Œæˆ‘ä»¬ä¼šå°½å¿«å®¡æ ¸å¹¶é€šè¿‡ã€‚
