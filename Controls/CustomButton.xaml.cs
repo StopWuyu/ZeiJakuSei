@@ -97,8 +97,8 @@ namespace ZeiJakuSei.Controls
             e.Handled = true;
 
             isClick = true;
-            ModAnimation.Animate(this, ScaleTransform.ScaleXProperty, 0.95, TimeSpan.FromMilliseconds(200));
-            ModAnimation.Animate(this, ScaleTransform.ScaleYProperty, 0.95, TimeSpan.FromMilliseconds(200));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleXProperty, 0.95, TimeSpan.FromMilliseconds(100));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleYProperty, 0.95, TimeSpan.FromMilliseconds(100));
         }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)
@@ -114,16 +114,16 @@ namespace ZeiJakuSei.Controls
 
             isClick = false;
             ModAnimation.Animate(this, BackgroundProperty, Colors.Transparent, TimeSpan.FromMilliseconds(100));
-            ModAnimation.Animate(this, ScaleTransform.ScaleXProperty, 1, TimeSpan.FromMilliseconds(200));
-            ModAnimation.Animate(this, ScaleTransform.ScaleYProperty, 1, TimeSpan.FromMilliseconds(200));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleXProperty, 1, TimeSpan.FromMilliseconds(100));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleYProperty, 1, TimeSpan.FromMilliseconds(100));
         }
 
         private void Button_MouseUp(object sender, MouseButtonEventArgs e)
         {
             e.Handled = true;
 
-            ModAnimation.Animate(this, ScaleTransform.ScaleXProperty, 1, TimeSpan.FromMilliseconds(200));
-            ModAnimation.Animate(this, ScaleTransform.ScaleYProperty, 1, TimeSpan.FromMilliseconds(200));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleXProperty, 1, TimeSpan.FromMilliseconds(100));
+            ModAnimation.AnimateScale(this, ScaleTransform.ScaleYProperty, 1, TimeSpan.FromMilliseconds(100));
 
             if (isClick)
             {

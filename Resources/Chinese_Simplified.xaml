@@ -2,7 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
     <sys:String x:Key="Home">主页</sys:String>
-    <sys:String x:Key="Download">下载</sys:String>
     <sys:String x:Key="Preference">设置</sys:String>
     <sys:String x:Key="About">关于</sys:String>
+    <sys:String x:Key="NotImplement">未实现此功能！</sys:String>
+    <sys:String x:Key="Input">请输入发送的消息内容</sys:String>
+    <sys:String x:Key="InvalidIP">IP 地址不合法！</sys:String>
 </ResourceDictionary>

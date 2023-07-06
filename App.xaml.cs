@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 namespace ZeiJakuSei
 {
@@ -13,5 +7,19 @@ namespace ZeiJakuSei
     /// </summary>
     public partial class App : Application
     {
+        static ResourceDictionary? resourceDictionary;
+        public void AppStartup(object sender, StartupEventArgs e)
+        {
+            // 获取Application对象
+            var application = (Application)sender;
+
+            // 获取App.xaml中定义的资源字典
+            resourceDictionary = application.Resources;
+        }
+
+        public static ResourceDictionary GetResourceDictionary()
+        {
+            return resourceDictionary!;
+        }
     }
 }

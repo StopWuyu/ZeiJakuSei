@@ -1,7 +1,5 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Interop;
 using ZeiJakuSei.Modules;
 
 namespace ZeiJakuSei
@@ -26,9 +24,14 @@ namespace ZeiJakuSei
             WindowState = WindowState.Minimized;
         }
 
-        private void Border_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            ModBase.Hint(ModBase.GetLocalizedText("NotImplement"));
         }
     }
 }
