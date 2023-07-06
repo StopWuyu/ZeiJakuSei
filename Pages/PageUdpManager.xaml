@@ -1,0 +1,52 @@
+﻿<Page x:Class="ZeiJakuSei.Pages.PageUdpManager"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:c="clr-namespace:ZeiJakuSei.Controls"
+      Width="950"
+      Height="490"
+      Title="PageUdpManager">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8.5*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid Margin="10">
+            <Border Background="White" CornerRadius="10,10,10,10" BorderThickness="1" BorderBrush="Gray" />
+            <TextBox x:Name="Log" Padding="10" Background="Transparent" BorderThickness="0" FontSize="15" IsReadOnly="True" TextWrapping="Wrap" />
+        </Grid>
+
+        <Grid Margin="10" Grid.Row="1">
+            <StackPanel Height="30" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Grid Width="700">
+                    <Border Background="White" BorderThickness="1" CornerRadius="5,5,5,5" BorderBrush="Gray" />
+                    <TextBox x:Name="InputMessage" Background="Transparent" BorderThickness="0" Tag="请输入连接IP地址" Style="{DynamicResource WarkTextBoxStyle}" VerticalContentAlignment="Center" Padding="5,0,0,0" TextChanged="InputMessage_TextChanged" />
+                </Grid>
+                <Grid Width="110">
+                    <StackPanel Orientation="Horizontal">
+                        <Grid Width="55">
+                            <Border Background="White" BorderThickness="1" CornerRadius="5,5,5,5" BorderBrush="Gray" />
+                            <TextBox x:Name="ListeningPort" Text="8254" ToolTip="监听端口" Background="Transparent" BorderThickness="0" Tag="监听端口" Style="{DynamicResource WarkTextBoxStyle}" VerticalContentAlignment="Center" Padding="5,0,0,0" />
+                        </Grid>
+                        <Grid Width="55">
+                            <Border Background="White" BorderThickness="1" CornerRadius="5,5,5,5" BorderBrush="Gray" />
+                            <TextBox x:Name="ConnectingPort" Text="8254" ToolTip="连接端口" Background="Transparent" BorderThickness="0" Tag="连接端口" Style="{DynamicResource WarkTextBoxStyle}" VerticalContentAlignment="Center" Padding="5,0,0,0" />
+                        </Grid>
+                    </StackPanel>
+                    <Grid Width="110" Visibility="Hidden" x:Name="UserPanel">
+                        <Border Background="White" BorderThickness="1" CornerRadius="5,5,5,5" BorderBrush="Gray" />
+                        <TextBox x:Name="UserName" Text="Somebody" ToolTip="用户名" Background="Transparent" BorderThickness="0" Tag="用户名" Style="{DynamicResource WarkTextBoxStyle}" VerticalContentAlignment="Center" Padding="5,0,0,0" />
+                    </Grid>
+                </Grid>
+                <Grid Width="120">
+                    <StackPanel Orientation="Horizontal">
+                        <c:CustomButton x:Name="ConnectingButton" Width="60" Height="30" Background="White" BorderBrush="Gray" CornerRadius="5,5,5,5" Text="连接" FontSize="15" Click="ConnectingButton_Click" />
+                        <c:CustomButton x:Name="ListeningButton" Width="60" Height="30" Background="White" BorderBrush="Gray" CornerRadius="5,5,5,5" Text="监听" FontSize="15" Click="ListeningButton_Click" />
+                    </StackPanel>
+                    <c:CustomButton x:Name="SendButton" Width="120" Height="30" Background="White" BorderBrush="Gray" CornerRadius="5,5,5,5" Text="发送" FontSize="15" Click="SendButton_Click" Visibility="Hidden" />
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

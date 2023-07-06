@@ -6,7 +6,7 @@ namespace ZeiJakuSei.Modules
 {
     internal class ModAnimation
     {
-        public static void Animate(UIElement targetElement, DependencyProperty property, double toValue, Duration duration)
+        public static void AnimateScale(UIElement targetElement, DependencyProperty property, double toValue, Duration duration)
         {
             var animation = new DoubleAnimation
             {
@@ -16,6 +16,25 @@ namespace ZeiJakuSei.Modules
 
             Storyboard.SetTarget(animation, targetElement);
             Storyboard.SetTargetProperty(animation, new PropertyPath($"(RenderTransform).(ScaleTransform.{property.Name})"));
+
+            var storyboard = new Storyboard
+            {
+                Duration = duration
+            };
+            storyboard.Children.Add(animation);
+
+            storyboard.Begin();
+        }
+        public static void Animate(UIElement targetElement, DependencyProperty property, double toValue, Duration duration)
+        {
+            var animation = new DoubleAnimation
+            {
+                To = toValue,
+                Duration = duration
+            };
+
+            Storyboard.SetTarget(animation, targetElement);
+            Storyboard.SetTargetProperty(animation, new PropertyPath($"({property.Name})"));
 
             var storyboard = new Storyboard
             {
