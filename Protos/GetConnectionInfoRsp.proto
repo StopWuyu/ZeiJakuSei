@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "ConnectionInfo.proto";
+
+package ZeiJakuSei.Packets;
+
+message GetConnectionInfoRsp {
+    int64 ResponseTime = 1;
+    ConnectionInfo Info = 2;
+}

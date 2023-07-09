@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using ZeiJakuSei.Modules;
 
 namespace ZeiJakuSei.Controls
@@ -33,7 +22,7 @@ namespace ZeiJakuSei.Controls
         #region 属性
 
         // 新建属性 Text
-        string text;
+        string text = "Text";
         public static readonly DependencyProperty textProperty =
             DependencyProperty.Register(
                 "Text",

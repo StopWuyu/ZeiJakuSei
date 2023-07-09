@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package ZeiJakuSei.Packets;
+
+message SendMessageRsp {
+    int64 RecievedTime = 1;
+}

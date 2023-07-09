@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package ZeiJakuSei.Packets;
+
+message SendMessageReq {
+    int64 SentTime = 1;
+    string SendMessage = 2;
+    bytes AESKey = 3;
+}
