@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:ZeiJakuSei"
              StartupUri="MainWindow.xaml"
-             Startup="AppStartup">
+             Startup="AppStartup"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException"
+             Exit="Application_Exit">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

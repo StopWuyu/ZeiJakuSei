@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package ZeiJakuSei.Packets;
+
+enum ConnectionInfo {
+    Success = 0;
+    Disconnect = 1;
+}

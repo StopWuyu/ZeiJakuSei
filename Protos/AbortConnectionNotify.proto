@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "ConnectionInfo.proto";
+
+package ZeiJakuSei.Packets;
+
+message AbortConnectionNotify {
+    ConnectionInfo Info = 1;
+}

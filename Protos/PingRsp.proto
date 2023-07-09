@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package ZeiJakuSei.Packets;
+
+message PingRsp {
+    int64 ResponseTime = 1;
+}
